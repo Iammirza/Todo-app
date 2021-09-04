@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="firebase.js"></script>
+</head>
+<body>
+     <div class="background__image">
+         <img src="./assets/bg-desktop-dark.jpg" alt="">
+     </div>
+     <div class="container">
+         <div class="header">
+             <div class="title">
+                 TODO
+             </div>
+             <div class="theme">
+                 <img src="./assets/icon-sun.svg" alt="">
+             </div>
+         </div>
+          <div class="new__todo">
+                <div class="check">
+                    <div class="check__mark">
+
+                    </div>
+                </div>
+                <div class="new__todo__input">
+                    <form action="" onsubmit="addItem(event)">
+                        <input id="todo__input" type="text" placeholder="Create New todo..">
+                    </form>
+                </div>
+          </div>
+          <div class="todo__items__wrapper">
+              <div class="todo__items">
+                    <div class="todo__item">
+                        <div class="check">
+                            <div class="check__mark">
+                                <img src="./assets/icon-check.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="todo__text">
+                            I develop TODO App
+                        </div>
+                    </div>
+                    <div class="todo__item">
+                        <div class="check">
+                            <div class="check__mark">
+                                <img src="./assets/icon-check.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="todo__text">
+                            I develop TODO App
+                        </div>
+                    </div>
+                    <div class="todo__item">
+                        <div class="check">
+                            <div class="check__mark">
+                                <img src="./assets/icon-check.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="todo__text">
+                            I develop TODO App
+                        </div>
+                    </div>
+              </div>
+              <div class="todo__items__info">
+                   <div class="items__left">
+                       5 Items left
+                   </div>
+                   <div class="items__status">
+                       <span class="active">All</span>
+                       <span>Active</span>
+                       <span>Completed</span>
+                   </div>
+                   <div class="items__clear">
+                       <span>Clear</span>
+                       <span>Completed</span>
+                   </div>
+              </div>
+          </div>
+     </div>
+
+      
+     <script src="app.js"></script>
+</body>
+</html>
