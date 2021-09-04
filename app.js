@@ -29,11 +29,11 @@ function generateItem(items){
         itemHTML += `
             <div class="todo__item">
                 <div class="check">
-                    <div data-id="${item.id}" class="check__mark" ${item.status === "completed" ? "checked" : ""}>
+                    <div data-id="${item.id}" class="check__mark" ${item.status == "completed" ? "checked" : ""}>
                         <img src="./assets/icon-check.svg" alt="">
                     </div>
                 </div>
-                <div class="todo__text" ${item.status === "completed" ? "checked" : ""}>
+                <div class="todo__text" ${item.status == "completed" ? "checked" : ""}>
                     ${item.text}
                 </div>
             </div>
